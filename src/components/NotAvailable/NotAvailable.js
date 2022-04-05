@@ -8,7 +8,7 @@ const NotAvailable = () => {
             </div>
             <div className='mt-[-75px] text-center '>
                 <h1 className='text-4xl font-bold'>404</h1>
-                <h1 className='text-2xl font-[500]'>This site is not Available right now</h1>
+                <h1 className='text-2xl font-[500]'>This page is not Available right now</h1>
                 <p className='text-xl'>Try again</p>
             </div>
         </div>

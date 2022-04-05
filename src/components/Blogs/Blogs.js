@@ -13,7 +13,7 @@ const Blogs = () => {
             </div>
             <div className='my-8'>
                 <h1 className='text-4xl  mb-2 text-red-500'>What are the different between inline and inline block element ?</h1>
-                <p className='text-2xl  '>Inline elements allow left or right margin and padding but not top or bottom. But inline-block elements allow left , right, top and bottom margin or padding .Inline elements do not allow any height or width but inline block element allow height or width .  </p>
+                <p className='text-2xl  '>Inline elements allow left or right margin and padding but don't allow top or bottom. But inline-block elements allow left , right, top and bottom margin or padding .Inline elements do not allow any height or width but inline block element allow height or width .  </p>
             </div>
         </div>
     );
