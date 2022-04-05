@@ -5,7 +5,7 @@ import chartData from '../utilities/chartData';
 const ChartInBar = () => {
     const data = chartData()
     return (
-        <div className='md:shadow lg:shadow-lg ml-5' >
+        <div className='md:shadow lg:shadow-lg lg:ml-5  my-8 md:ml-5' >
             <div>
                 <h1 className='text-4xl font-bold  text-center my-8 text-[#7B68EE]'>
                     Monthly Wise Sell
@@ -14,7 +14,7 @@ const ChartInBar = () => {
             </div>
 
             <div className='flex justify-center'>
-                <ResponsiveContainer width={450} height={350}
+                <ResponsiveContainer width='100%' height={400}
                     margin={{
                         top: 20,
                         bottom: 5,

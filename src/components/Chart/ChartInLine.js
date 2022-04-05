@@ -14,7 +14,7 @@ const ChartInLine = () => {
                 </h1>
             </div>
             <div className='flex justify-center'>
-                <ResponsiveContainer width={350} height={350}
+                <ResponsiveContainer width='80%' height={400}
                     margin={{
                         top: 20,
                         bottom: 5,

@@ -19,7 +19,6 @@ const Review = ({ reviewDetail }) => {
                         <FontAwesomeIcon className='text-orange-400 ml-1' icon={faStar}></FontAwesomeIcon>
                         <FontAwesomeIcon className='text-orange-400 ml-1' icon={faStar}></FontAwesomeIcon>
                         <FontAwesomeIcon className='text-orange-400 ml-1' icon={faStar}></FontAwesomeIcon>
-
                     </p>
                 </div>
             </div>
