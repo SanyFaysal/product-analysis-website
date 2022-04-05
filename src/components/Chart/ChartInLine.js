@@ -1,45 +1,40 @@
 import React from 'react';
-import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import chartData from '../utilities/chartData';
 
 const ChartInLine = () => {
     const data = chartData()
     return (
-        <div className='md:shadow lg:shadow-lg '>
+        <div>
             <div>
-                <h1 className='text-4xl font-bold text-center my-8'>
+                <h1 className='text-4xl font-bold text-center my-12'>
                     <span className='text-[#8884d8]'>Investment </span>
                     vs
+                    <br />
+
                     <span className='text-[#00CED1] ml-4'>Revenue</span>
                 </h1>
             </div>
-            <div className='flex justify-center'>
-                <ResponsiveContainer width='80%' height={400}
-                    margin={{
-                        top: 20,
-                        bottom: 5,
-                    }}
-                >
-                    <LineChart
-
-                        width={580}
-                        height={350}
+            <div className='flex justify-center '>
+                <ResponsiveContainer width='95%' height={300}>
+                    <AreaChart
+                        width={500}
+                        height={400}
                         data={data}
                         margin={{
-                            top: 5,
-                            bottom: 5,
-                        }}>
-
+                            top: 10,
+                            right: 30,
+                            left: 0,
+                            bottom: 0,
+                        }}
+                    >
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="month" />
                         <YAxis />
                         <Tooltip />
-                        <Legend />
-
-                        <Line type="monotone" dataKey="investment" stroke="#8884d8" activeDot={{ r: 8 }} />
-                        <Line type="monotone" dataKey="revenue" stroke="#00CED1	" activeDot={{ r: 8 }} />
-
-                    </LineChart>
+                        <Area type="monotone" dataKey="investment" stroke="#8884d8" fill="#8884d8" />
+                        <Area type="monotone" dataKey="revenue" stroke="#00BFFF" fill="#00BFFF" />
+                    </AreaChart>
                 </ResponsiveContainer>
             </div>
 

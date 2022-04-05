@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className='lg:container md:container mx-auto'>
+        <div className='w-[80%] mx-auto'>
             <div className='my-8'>
                 <h1 className='text-4xl  mb-2 text-red-500'>What is Context API ? </h1>
                 <p className='text-2xl  '>To pass a data by props from grand parents component to children component, it needs to sent grand parents to father then father to children called prop drilling.It is very difficult.Here the Context API works well. It pass a data through a global variable that can be used in every component.So to pass a data from any component to any component , Context API is a way to pass data avoiding props drilling. </p>
