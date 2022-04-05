@@ -1,5 +1,5 @@
 import React from 'react';
-import { CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import chartData from '../utilities/chartData';
 
 const ChartInLine = () => {
@@ -13,26 +13,37 @@ const ChartInLine = () => {
                     <span className='text-[#00CED1] ml-4'>Revenue</span>
                 </h1>
             </div>
-            <LineChart
+            <div className='flex justify-center'>
+                <ResponsiveContainer width={350} height={350}
+                    margin={{
+                        top: 20,
+                        bottom: 5,
+                    }}
+                >
+                    <LineChart
 
-                width={580}
-                height={350}
-                data={data}
-                margin={{
-                    top: 5,
-                    bottom: 5,
-                }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="month" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
+                        width={580}
+                        height={350}
+                        data={data}
+                        margin={{
+                            top: 5,
+                            bottom: 5,
+                        }}>
 
-                <Line type="monotone" dataKey="investment" stroke="#8884d8" activeDot={{ r: 8 }} />
-                <Line type="monotone" dataKey="revenue" stroke="#00CED1	" activeDot={{ r: 8 }} />
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="month" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
 
-            </LineChart>
+                        <Line type="monotone" dataKey="investment" stroke="#8884d8" activeDot={{ r: 8 }} />
+                        <Line type="monotone" dataKey="revenue" stroke="#00CED1	" activeDot={{ r: 8 }} />
+
+                    </LineChart>
+                </ResponsiveContainer>
+            </div>
+
+
         </div >
     )
 };
