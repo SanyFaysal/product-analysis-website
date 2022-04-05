@@ -1,6 +1,6 @@
 ## Biriyani Love
-## Project Live site : [Biriyani Lover](https://github.com/facebook/create-react-app).
-
+## Project Live site : [Biriyani Lover](https://sparkling-tapioca-bbf2a0.netlify.app).
+## Projects Details : 
 * Creating a Home component for inviting in Biriyani lover 
 * A Review component for showing customers opinion about Biriyani House 
 * A Dashboard Component to highlight the selling , revenue and invest in different months
