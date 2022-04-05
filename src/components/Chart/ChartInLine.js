@@ -5,7 +5,7 @@ import chartData from '../utilities/chartData';
 const ChartInLine = () => {
     const data = chartData()
     return (
-        <div className='md:shadow lg:shadow-lg w-[100%]'>
+        <div className='md:shadow lg:shadow-lg '>
             <div>
                 <h1 className='text-4xl font-bold text-center my-8'>
                     <span className='text-[#8884d8]'>Investment </span>
@@ -14,13 +14,12 @@ const ChartInLine = () => {
                 </h1>
             </div>
             <LineChart
+
                 width={580}
                 height={350}
                 data={data}
                 margin={{
                     top: 5,
-                    right: 30,
-                    left: 20,
                     bottom: 5,
                 }}
             >

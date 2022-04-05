@@ -11,7 +11,7 @@ const Navbar = () => {
             <div onClick={() => setOpen(!open)} className="w-full text-3xl pl-2  md:hidden lg:hidden bg-gray-200">
                 {open ? <FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> : <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>}
             </div>
-            <div className={`md:flex sm: lg:flex sm:text-center text-center justify-center bg-gray-200 py-4 w-full absolute duration-500 ease-in md:static ${open ? 'top-8' : 'top-[-220px]'}`}>
+            <div className={`md:flex  lg:flex sm:text-center text-center justify-center bg-gray-200 py-4 w-full absolute duration-500 ease-in md:static ${open ? 'top-8' : 'top-[-220px]'}`}>
                 <CustomLink className='mr-8 p-[25px]' to='/home'>HOME</CustomLink>
                 <CustomLink className='mr-8 p-[25px]' to='/reviews'>REVIEWS</CustomLink>
                 <CustomLink className='mr-8 p-[25px]' to='/dashboard'>DASHBOARD</CustomLink>
