@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div className='w-[80%] mx-auto '>
             <div className='flex grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 items-center border-x-gray-100 mx-auto mt-4'>
-                <div className=''>
+                <div className=' text-justify'>
                     <h3 className='text-5xl font-bold font-sans'>
                         Do A Perfect Launch With Your
                         <span className='text-indigo-500 ml-2'>Friends</span>

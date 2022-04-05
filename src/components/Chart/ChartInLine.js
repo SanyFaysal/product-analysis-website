@@ -7,10 +7,10 @@ const ChartInLine = () => {
     return (
         <div>
             <div>
-                <h1 className='text-4xl font-bold text-center my-12'>
+                <h1 className='text-4xl font-bold text-center mb-5'>
                     <span className='text-[#8884d8]'>Investment </span>
                     vs
-                    <br />
+
 
                     <span className='text-[#00CED1] ml-4'>Revenue</span>
                 </h1>

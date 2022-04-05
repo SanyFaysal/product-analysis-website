@@ -7,7 +7,7 @@ const ChartInBar = () => {
     return (
         <div  >
             <div>
-                <h1 className='text-4xl font-bold  text-center my-12 text-[#7B68EE]'>
+                <h1 className='text-4xl font-bold my-5  text-center text-[#7B68EE]'>
                     Monthly Wise Sell
                 </h1>
 
@@ -17,7 +17,7 @@ const ChartInBar = () => {
                 <ResponsiveContainer width='98%' height={300}>
                     <BarChart
                         width={630}
-                        height={350}
+                        height={400}
                         data={data}
                         margin={{
                             top: 20,
